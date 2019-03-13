@@ -1,0 +1,11 @@
+.site-header {
+  background-color: $color__header;
+
+  .row {
+
+    @include mq($bp-m) {
+      display: flex;
+      justify-content: space-between;   
+    }
+  }
+}

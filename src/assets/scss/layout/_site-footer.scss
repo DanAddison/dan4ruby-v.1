@@ -1,0 +1,30 @@
+.site-footer {
+  text-align: center;
+  background-color: $color__footer;
+
+  @include mq($bp-m) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .copyright {
+    display: block;
+    margin-bottom: 0;
+
+    @include mq($bp-m) {
+      // order: -1;
+    }
+  }
+
+  .credit {
+    display: block;
+
+    a {
+      color: #FFFFFF;
+      background-color: $color__body-light;
+      text-decoration: none;
+      padding: 1px 4px;
+      border-radius: 2px;
+    }
+  }
+}

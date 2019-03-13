@@ -1,0 +1,46 @@
+{% set body_id = "home" %}
+
+{% block meta %}
+    <title>[page name] - [website name] | [a few words here about this page]</title>
+    <meta name="title" content="[page name] - [website name] | [a few words here about this page]">
+    <meta name="description" content="[a longer description, not as important as title, but should naturally include some keywords]">
+{% endblock %}
+
+{% block og_meta %}
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://for-the-whim.com/">
+    <meta property="og:title" content="[page name] - [website name] | [a few words here about this page]">
+    <meta property="og:description" content="[a longer description, not as important as title, but should naturally include some keywords]">
+    <meta property="og:image" content="https://for-the-whim.com/assets/images/appropriate-image-maybe-a-screenshot-of-the-page.jpg">
+    <meta property="og:image:height" content="800">
+    <meta property="og:image:width" content="800">
+{% endblock %}
+
+{% block twitter_meta %}
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://for-the-whim.com/">
+    <meta property="twitter:title" content="[page name] - [website name] | [a few words here about this page]">
+    <meta property="twitter:description" content="[a longer description, not as important as title, but should naturally include some keywords]">
+    <meta property="twitter:image" content="https://for-the-whim.com/assets/images/appropriate-image-maybe-a-screenshot-of-the-page.jpg">
+{% endblock %}
+
+{% extends "layout.njk" %}
+
+{% block content %}
+
+  <div class="row row--pad">
+
+    <div class="intro">
+      <h1>A dope a.f. boilerplate for static portfolio websites!</h1>
+      <p>It uses Nunjucks templating.</p>
+      <p>Gulp handles the templates as well as compiling and optimising Sass, JS, HTML, and images.</p>
+      <p>It also includes browser sync.</p>
+    </div>
+
+  </div><!-- row -->
+
+{% endblock %}
+
+{% block js %}
+<!-- extra scripts for this page only, begin with 'build js' and give filename.min.js for it -->
+{% endblock %}

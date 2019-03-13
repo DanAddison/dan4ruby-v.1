@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics (go get the code to paste in here) -->
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="theme-color" content="#237d8d">
+
+    {# page-specific primary meta-tags #}
+    {% block meta %}{% endblock %}
+
+    <!-- page-specific Open Graph / Facebook -->
+    {% block og_meta %}{% endblock %}
+    
+    <!-- page-specific Twitter -->
+    {% block twitter_meta %}{% endblock %}
+
+    <!-- essential comment for gulp to minify and put css into dist folder: -->
+    <!--build:css css/styles.min.100.css-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--endbuild-->
+
+    {# get the google fonts #}
+    <link href="https://fonts.googleapis.com/css?family=Niramit|Open+Sans" rel="stylesheet">
+
+    {# favicon #}
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- cookie consent provided by https://github.com/insites/cookieconsent: -->
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+
+  </head>
+
+  <body id="{{ body_id }}">
+
+    {% include "partials/header.njk" %}
+
+    <div class="page">
+
+
+      <!-- You write this content block in pages files -->
+      {% block content %} {% endblock %}
+
+
+    </div><!-- #page -->
+
+    {% include "partials/footer.njk" %}
+
+    <!--build:js js/main.min.js -->
+    <script src="js/lib/jquery-2.1.0.min.js"></script>
+    <script src="js/daMenu.js"></script>
+    <script src="js/userTabbing.js"></script>
+
+    <script src="js/lib/jquery.fancybox.js"></script>
+    <script src="js/daFancybox.js"></script>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script src="js/lib/cookieConsent.js"></script>
+    <!-- endbuild -->
+
+    {# page-specific scripts if really necessary #}
+    {% block js %}{% endblock %}
+
+  </body>
+</html>

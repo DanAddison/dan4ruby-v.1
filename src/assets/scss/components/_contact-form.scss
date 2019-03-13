@@ -1,0 +1,25 @@
+.contact-form {
+  float: left;
+  text-align: left;
+  width: 100%;
+  padding: 1rem;
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    margin: .5rem 0;
+  }
+
+  button {
+
+    &:hover,
+    &:focus {
+      background-color: $primary;
+    }
+  }
+
+  @include mq($bp-m) {
+    width: 50%;
+  }
+}

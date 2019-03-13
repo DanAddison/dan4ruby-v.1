@@ -1,0 +1,24 @@
+.contact {
+  @extend %cf;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: $bp-l;
+    
+  .portrait {
+    float: left;
+    width: 100%;
+
+    img {
+      width: 500px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    @include mq($bp-m) {
+      width: 50%;
+    }
+  }
+}
+
+
