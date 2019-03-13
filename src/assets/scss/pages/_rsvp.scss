@@ -1,0 +1,21 @@
+.rsvp {
+  max-width: $bp-l;
+    
+  @include mq($bp-m) {
+    display: flex;
+  }
+
+  .memes {
+
+    .meme {
+      margin-bottom: $spacing*4;
+    }
+
+    @include mq($bp-m) {
+      width: 50%;
+    }
+
+  }
+}
+
+

@@ -1,9 +1,22 @@
-.intro {
-  text-align: center;
-  color: $color__body;
+.section {
+  margin-bottom: $spacing*2;
 
-  h1 {
+  h2 {
     font-weight: bold;
     font-size: 2em;
   } 
+  
+  @include mq($bp-m) {
+    display: flex;
+  }
+}
+
+.faqs {
+  display: block;
+  
+  .question {
+    margin-bottom: 0.25em;
+    font-size: 1.25em;
+    font-weight: bold;
+  }
 }

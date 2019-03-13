@@ -1,0 +1,62 @@
+{% set body_id = "RSVP" %}
+
+{% extends "layout.njk" %}
+
+{% block content %}
+
+  <div class="row row--pad">
+
+    <div class="rsvp">
+
+      <div class="memes">
+
+        <div class="meme">
+          <img src="assets/images/brule.jpeg" alt="">
+        </div>
+
+        <div class="meme">
+          <img src="assets/images/arnold.jpeg" alt="">
+        </div>
+
+      </div><!-- memes -->
+
+      <form class="contact-form" name="contact" method="POST" netlify-honeypot="bot-field" netlify>
+        <p class="hidden">
+          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </p>
+        <p>
+          <label>Your Name(s): <input type="text" name="name" required/></label>   
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" required/></label>
+        </p>
+        <p>
+          <label>Dr Steve Brule MD or The Governator?<select name="fav[]">
+            <option value="brule">Brule</option>
+            <option value="arnold">Arnold</option>
+          </select></label>
+        </p>
+        <p>
+          <label>So... are you coming?<select name="fav[]">
+            <option value="yes">I do</option>
+            <option value="no">I object</option>
+          </select></label>
+        </p>
+        <p>
+          <label>Anything to add?: <textarea name="message" rows="10" required></textarea></label>
+        </p>
+        <div data-netlify-recaptcha></div>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+
+    </div><!-- .contact -->
+
+  </div><!-- row -->
+
+{% endblock %}
+
+{% block js %}
+<!-- extra scripts for this page only, begin with 'build js' and give filename.min.js for it -->
+{% endblock %}

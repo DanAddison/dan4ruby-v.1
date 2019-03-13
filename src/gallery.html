@@ -26,14 +26,14 @@
 
   </head>
 
-  <body id="RSVP">
+  <body id="gallery">
 
     <header class="site-header"> 
 
   <div class="row row--pad">
 
     <div class="site-branding">
-      <a href="/home"><h1>For The Whim</h1></a>
+      <a href="/home"><h1>Dan 4 Ruby</h1></a>
     </div>
 
     <nav class="main-nav">
@@ -43,14 +43,11 @@
       </div>
 
       <ul>
-        <li><a href="/home">home</a></li>
-        <li><a href="/contact">contact</a></li>
+        <li><a href="/">home</a></li>
+        <li><a href="/rsvp">RSVP</a></li>
+        <li><a href="/gallery">gallery</a></li>
       </ul>
-
-      <div class="social-icons">
-        <a href="www.facebook.com/daniel.addison.984" target="_blank"><i class="icon-facebook21"></i></a>
-        <a href="https://www.instagram.com/dandevelops" target="_blank"><i class="icon-instagram"></i></a>
-      </div>
+      
     </nav>
 
   </div><!-- row -->
@@ -65,38 +62,11 @@
 
   <div class="row row--pad">
 
-    <div class="rsvp">
+    <div class="gallery">
 
-      <div class="portrait">
-        <img src="assets/images/KefAvatarSquare.jpg" alt="">
-      </div>
-
-      <form class="contact-form" name="contact" method="POST" netlify-honeypot="bot-field" netlify>
-        <p class="hidden">
-          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-        </p>
-        <p>
-          <label>Your Name: <input type="text" name="name" required/></label>   
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email" required/></label>
-        </p>
-        <p>
-          <label>Your fav TV show: <select name="fav[]">
-            <option value="wire">The Wire</option>
-            <option value="some other bullshit">Some other bullshit</option>
-          </select></label>
-        </p>
-        <p>
-          <label>Message: <textarea name="message" rows="10" required></textarea></label>
-        </p>
-        <div data-netlify-recaptcha></div>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
-
-    </div><!-- .contact -->
+      <h1>This is gonna be a thumbnail gallery of all the cool photos from our wedding</h1>
+      
+    </div>
 
   </div><!-- row -->
 
@@ -110,11 +80,10 @@
   <div class="row row--pad">
 
     <div class="social-icons">
-      <a href="https://github.com/DanAddison" target="_blank"><i class="fab fa-github-square"></i></a>
-      <a href="https://www.linkedin.com/in/danaddison/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
+        <a href="https://www.instagram.com/explore/tags/dan4ruby/" target="_blank"><i class="icon-instagram"></i></a>
+      </div>
 
-    <p class="copyright">&copy <a href="http://www.danaddison.co.uk">Dan Addison</a> 2017</p>
+    <p class="copyright">&copy <a href="https://danaddisoncreative.com">Dan Addison</a> 2019</p>
 
   </div><!-- row -->
 
@@ -131,7 +100,10 @@
 
     
     
-<!-- extra scripts for this page only, begin with 'build js' and give filename.min.js for it -->
+  <!--build:js js/main.min.js -->
+  <script src="js/lib/jquery.fancybox.js"></script>
+  <script src="js/daFancybox.js"></script>
+  <!-- endbuild -->
 
 
   </body>

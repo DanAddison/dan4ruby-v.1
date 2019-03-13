@@ -2,38 +2,13 @@
 
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics (go get the code to paste in here) -->
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="theme-color" content="#237d8d">
-
-    
-    
-    <title>[page name] - [website name] | [a few words here about this page]</title>
-    <meta name="title" content="[page name] - [website name] | [a few words here about this page]">
-    <meta name="description" content="[a longer description, not as important as title, but should naturally include some keywords]">
-
-
-    <!-- page-specific Open Graph / Facebook -->
-    
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://for-the-whim.com/">
-    <meta property="og:title" content="[page name] - [website name] | [a few words here about this page]">
-    <meta property="og:description" content="[a longer description, not as important as title, but should naturally include some keywords]">
-    <meta property="og:image" content="https://for-the-whim.com/assets/images/appropriate-image-maybe-a-screenshot-of-the-page.jpg">
-    <meta property="og:image:height" content="800">
-    <meta property="og:image:width" content="800">
-
-    
-    <!-- page-specific Twitter -->
-    
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://for-the-whim.com/">
-    <meta property="twitter:title" content="[page name] - [website name] | [a few words here about this page]">
-    <meta property="twitter:description" content="[a longer description, not as important as title, but should naturally include some keywords]">
-    <meta property="twitter:image" content="https://for-the-whim.com/assets/images/appropriate-image-maybe-a-screenshot-of-the-page.jpg">
-
+    <title>Dan 4 Ruby | Boom! The Wedding</title>
+    <meta name="title" content="Dan 4 Ruby | Boom! The Wedding">
+    <meta name="description" content="Hi there guests, find info here about the big day!">
 
     <!-- essential comment for gulp to minify and put css into dist folder: -->
     <!--build:css css/styles.min.100.css-->
@@ -58,7 +33,7 @@
   <div class="row row--pad">
 
     <div class="site-branding">
-      <a href="/home"><h1>For The Whim</h1></a>
+      <a href="/home"><h1>Dan 4 Ruby</h1></a>
     </div>
 
     <nav class="main-nav">
@@ -68,14 +43,11 @@
       </div>
 
       <ul>
-        <li><a href="/home">home</a></li>
-        <li><a href="/contact">contact</a></li>
+        <li><a href="/">home</a></li>
+        <li><a href="/rsvp">RSVP</a></li>
+        <li><a href="/gallery">gallery</a></li>
       </ul>
-
-      <div class="social-icons">
-        <a href="www.facebook.com/daniel.addison.984" target="_blank"><i class="icon-facebook21"></i></a>
-        <a href="https://www.instagram.com/dandevelops" target="_blank"><i class="icon-instagram"></i></a>
-      </div>
+      
     </nav>
 
   </div><!-- row -->
@@ -90,12 +62,68 @@
 
   <div class="row row--pad">
 
-    <div class="intro">
-      <h1>A dope a.f. boilerplate for static portfolio websites!</h1>
-      <p>It uses Nunjucks templating.</p>
-      <p>Gulp handles the templates as well as compiling and optimising Sass, JS, HTML, and images.</p>
-      <p>It also includes browser sync.</p>
-    </div>
+    <div class="section intro">
+
+      <div class="image">
+        <img src="assets/images/couple.jpg" alt="">
+      </div>
+
+      <div class="copy">
+        <h2>Hi friends and family!</h2>
+        <p>You’re in the right place for info about our big day, for sending your RSVP, and for seeing all our wedding photos after the event.</p>
+        <p>We can't wait to celebrate with you!</p>
+      </div>
+
+    </div><!-- section intro -->
+
+    <div class="section venue">
+
+      <div class="copy">
+        <p>Strange Cargo means a lot to both of us, so we’re thrilled that Brigitte is welcoming us all to celebrate at the Factory building.</p>
+        <p>We can't thank her enough for her generosity. Most of you already know and love Strange Cargo, but you can find out more about this awesome community arts charity  <a href="http://www.strangecargo.org.uk/">here ></a></p>
+      </div>
+
+      <div class="image">
+        <img src="assets/images/Factory.jpg" alt="">
+      </div>
+
+    </div><!-- section venue -->
+
+    <div class="section location">
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2506.2386281177105!2d1.1476031519935608!3d51.08560347946775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47debf342349ee8d%3A0x4e5bdf893d464c10!2sStrange+Cargo+Arts+Company+Ltd!5e0!3m2!1sen!2suk!4v1552476460107" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <div class="copy">
+        <p>Google map to go here.</p>
+        <p>There is no parking at the factory - in fact all of the surrounding streets are usually chokka-blok. Let's try not to annoy the neighbours, let's use alternative means of transport.</p>
+        <p>For any out of towners (anyone??), Folkestone West is 5 minutes walk away.</p>
+      </div>
+
+      
+    </div><!-- section location -->
+
+    <div class="section faqs">
+      <h2>FAQs</h2>
+      <p class="question">What time is it?</p>
+      <p>We recommend arriving between 12-12:30pm. The ceremony will take place at 1pm. There will be food at about 3pm, and partying including Jazz Beams DJs until 11pm.</p>
+      <p class="question">What's the dress code?</p>
+      <p>Anything you like! Seriously. But most people are up for dressing a bit posh at any wedding, so that's your safest bet for fitting in.</p>
+      <p class="question">What's for tea?</p>
+      <p>There will be a large spread of buffet food, kindly prepared by mad-keen and long-suffering family members. This should satisfy all wonky dietary requirements. We will also provide some bubbly, wine, beer and soft drinks.</p>
+      <p class="question">What shall I bring?</p>
+      <p>A bottle! Any beverage contribution, however small, would help. We suspect your appetites will be far deeper than our pockets.</p>
+      <p class="question">Am I supposed to give you guys a gift?</p>
+      <p>Nope, definitely not. But we'd encourage donations to Strange Cargo - you already knew you loved and valued SC, and now more than ever! You'll be able to give a little cash on the day.</p>
+      <p class="question">Can I bring the kids?</p>
+      <p>Heck yes you can. Unless you were looking forward to having a break from them for the day!</p>
+      <p class="question">Instagram?</p>
+      <p>Yeah, fill your boots - be sure to use #dan4ruby.</p>
+      <p class="question">I'm sold. Can I confirm my attendance?</p>
+      <p>Sure, <a href="/rsvp">next page ></a></p>
+
+    </div><!-- section faqs -->
 
   </div><!-- row -->
 
@@ -109,11 +137,10 @@
   <div class="row row--pad">
 
     <div class="social-icons">
-      <a href="https://github.com/DanAddison" target="_blank"><i class="fab fa-github-square"></i></a>
-      <a href="https://www.linkedin.com/in/danaddison/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
+        <a href="https://www.instagram.com/explore/tags/dan4ruby/" target="_blank"><i class="icon-instagram"></i></a>
+      </div>
 
-    <p class="copyright">&copy <a href="http://www.danaddison.co.uk">Dan Addison</a> 2017</p>
+    <p class="copyright">&copy <a href="https://danaddisoncreative.com">Dan Addison</a> 2019</p>
 
   </div><!-- row -->
 
@@ -123,9 +150,6 @@
     <script src="js/lib/jquery-2.1.0.min.js"></script>
     <script src="js/daMenu.js"></script>
     <script src="js/userTabbing.js"></script>
-
-    <script src="js/lib/jquery.fancybox.js"></script>
-    <script src="js/daFancybox.js"></script>
     
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
     <script src="js/lib/cookieConsent.js"></script>

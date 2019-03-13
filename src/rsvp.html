@@ -33,7 +33,7 @@
   <div class="row row--pad">
 
     <div class="site-branding">
-      <a href="/home"><h1>For The Whim</h1></a>
+      <a href="/home"><h1>Dan 4 Ruby</h1></a>
     </div>
 
     <nav class="main-nav">
@@ -43,14 +43,11 @@
       </div>
 
       <ul>
-        <li><a href="/home">home</a></li>
-        <li><a href="/contact">contact</a></li>
+        <li><a href="/">home</a></li>
+        <li><a href="/rsvp">RSVP</a></li>
+        <li><a href="/gallery">gallery</a></li>
       </ul>
-
-      <div class="social-icons">
-        <a href="www.facebook.com/daniel.addison.984" target="_blank"><i class="icon-facebook21"></i></a>
-        <a href="https://www.instagram.com/dandevelops" target="_blank"><i class="icon-instagram"></i></a>
-      </div>
+      
     </nav>
 
   </div><!-- row -->
@@ -67,28 +64,42 @@
 
     <div class="rsvp">
 
-      <div class="portrait">
-        <img src="assets/images/KefAvatarSquare.jpg" alt="">
-      </div>
+      <div class="memes">
+
+        <div class="meme">
+          <img src="assets/images/brule.jpeg" alt="">
+        </div>
+
+        <div class="meme">
+          <img src="assets/images/arnold.jpeg" alt="">
+        </div>
+
+      </div><!-- memes -->
 
       <form class="contact-form" name="contact" method="POST" netlify-honeypot="bot-field" netlify>
         <p class="hidden">
           <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
         </p>
         <p>
-          <label>Your Name: <input type="text" name="name" required/></label>   
+          <label>Your Name(s): <input type="text" name="name" required/></label>   
         </p>
         <p>
           <label>Your Email: <input type="email" name="email" required/></label>
         </p>
         <p>
-          <label>Your fav TV show: <select name="fav[]">
-            <option value="wire">The Wire</option>
-            <option value="some other bullshit">Some other bullshit</option>
+          <label>Dr Steve Brule MD or The Governator?<select name="fav[]">
+            <option value="brule">Brule</option>
+            <option value="arnold">Arnold</option>
           </select></label>
         </p>
         <p>
-          <label>Message: <textarea name="message" rows="10" required></textarea></label>
+          <label>So... are you coming?<select name="fav[]">
+            <option value="yes">I do</option>
+            <option value="no">I object</option>
+          </select></label>
+        </p>
+        <p>
+          <label>Anything to add?: <textarea name="message" rows="10" required></textarea></label>
         </p>
         <div data-netlify-recaptcha></div>
         <p>
@@ -110,11 +121,10 @@
   <div class="row row--pad">
 
     <div class="social-icons">
-      <a href="https://github.com/DanAddison" target="_blank"><i class="fab fa-github-square"></i></a>
-      <a href="https://www.linkedin.com/in/danaddison/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
+        <a href="https://www.instagram.com/explore/tags/dan4ruby/" target="_blank"><i class="icon-instagram"></i></a>
+      </div>
 
-    <p class="copyright">&copy <a href="http://www.danaddison.co.uk">Dan Addison</a> 2017</p>
+    <p class="copyright">&copy <a href="https://danaddisoncreative.com">Dan Addison</a> 2019</p>
 
   </div><!-- row -->
 

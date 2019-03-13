@@ -11,12 +11,12 @@
 /*********************************************************
 ## Clearfix
 *********************************************************/
-.row__colspaced:after, .row__coltouching:after, .contact:after {
+.row__colspaced:after, .row__coltouching:after {
   content: "";
   display: table;
   clear: both; }
 
-.row__colspaced:before, .row__coltouching:before, .contact:before {
+.row__colspaced:before, .row__coltouching:before {
   content: "";
   display: table; }
 
@@ -1084,28 +1084,32 @@ body:not(.user-is-tabbing) a:focus {
       padding: 1px 4px;
       border-radius: 2px; }
 
-.intro {
-  text-align: center;
-  color: #222; }
-  .intro h1 {
+.section {
+  margin-bottom: 4em; }
+  .section h2 {
     font-weight: bold;
     font-size: 2em; }
+  @media screen and (min-width: 700px) {
+    .section {
+      display: flex; } }
 
-.contact {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+.faqs {
+  display: block; }
+  .faqs .question {
+    margin-bottom: 0.25em;
+    font-size: 1.25em;
+    font-weight: bold; }
+
+.rsvp {
   max-width: 1000px; }
-  .contact .portrait {
-    float: left;
-    width: 100%; }
-    .contact .portrait img {
-      width: 500px;
-      max-width: 100%;
-      height: auto; }
-    @media screen and (min-width: 700px) {
-      .contact .portrait {
-        width: 50%; } }
+  @media screen and (min-width: 700px) {
+    .rsvp {
+      display: flex; } }
+  .rsvp .memes .meme {
+    margin-bottom: 8em; }
+  @media screen and (min-width: 700px) {
+    .rsvp .memes {
+      width: 50%; } }
 
 .site-branding {
   text-align: center; }

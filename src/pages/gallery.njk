@@ -1,0 +1,24 @@
+{% set body_id = "gallery" %}
+
+{% extends "layout.njk" %}
+
+{% block content %}
+
+  <div class="row row--pad">
+
+    <div class="gallery">
+
+      <h1>This is gonna be a thumbnail gallery of all the cool photos from our wedding</h1>
+      
+    </div>
+
+  </div><!-- row -->
+
+{% endblock %}
+
+{% block js %}
+  <!--build:js js/main.min.js -->
+  <script src="js/lib/jquery.fancybox.js"></script>
+  <script src="js/daFancybox.js"></script>
+  <!-- endbuild -->
+{% endblock %}

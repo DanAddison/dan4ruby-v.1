@@ -1,22 +1,9 @@
-# For The Whim
+# Dan 4 Ruby
 
-My static site boilerplate.
+This is our wedding site!
 
-It uses Nunjucks templating.
+It is a public website but it has SEO optimizations stripped out - it is targeted specifically at our invited guests.
 
-Gulp handles the templates as well as compiling and optimising Sass, JS, HTML, and images. Also includes browser sync.
+This is where guests can find information so that they know what to expect and can plan accordingly.
 
-Run 'gulp' as default task for development. Work inside the 'app' directory.
-
-Run 'gulp build' to create the 'dist' folder, for deployment to a live server *
-
-*note: I never have to run gulp build because I am deploying with Netlify, so they run the build process whenever detecting an update to the GitHub repo. Therefore I don't even need a 'dist' folder in my repo.
-*note: scripts and stylesheets need to be defined between <!-- build --> comment tags in the HTML files, for the gulp 'useref' task to minify and add them to 'dist'
-
-This Gulp file is based upon this extremely helpful article: https://css-tricks.com/gulp-for-beginners/ 
-The repo for their finished gulpfile is here: https://github.com/zellwk/gulp-starter-csstricks
-
-## Improvements to my gulp process which I intend to introduce:
-* Sass globbing so I don't have to list out every file in main.scss
-* Sourcemaps
-* Autoprefixing
+It is also where they will send their RSVP responses, and ultimately it will remain online as an image gallery to document the big day.

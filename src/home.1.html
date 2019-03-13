@@ -2,13 +2,20 @@
 
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics (go get the code to paste in here) -->
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="theme-color" content="#237d8d">
-    <title>Dan 4 Ruby | Boom! The Wedding</title>
-    <meta name="title" content="Dan 4 Ruby | Boom! The Wedding">
-    <meta name="description" content="Hi there guests, find info here about the big day!">
+
+    
+    
+
+    <!-- page-specific Open Graph / Facebook -->
+    
+    
+    <!-- page-specific Twitter -->
+    
 
     <!-- essential comment for gulp to minify and put css into dist folder: -->
     <!--build:css css/styles.min.100.css-->
@@ -26,7 +33,7 @@
 
   </head>
 
-  <body id="RSVP">
+  <body id="home">
 
     <header class="site-header"> 
 
@@ -65,38 +72,12 @@
 
   <div class="row row--pad">
 
-    <div class="rsvp">
-
-      <div class="portrait">
-        <img src="assets/images/KefAvatarSquare.jpg" alt="">
-      </div>
-
-      <form class="contact-form" name="contact" method="POST" netlify-honeypot="bot-field" netlify>
-        <p class="hidden">
-          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-        </p>
-        <p>
-          <label>Your Name: <input type="text" name="name" required/></label>   
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email" required/></label>
-        </p>
-        <p>
-          <label>Your fav TV show: <select name="fav[]">
-            <option value="wire">The Wire</option>
-            <option value="some other bullshit">Some other bullshit</option>
-          </select></label>
-        </p>
-        <p>
-          <label>Message: <textarea name="message" rows="10" required></textarea></label>
-        </p>
-        <div data-netlify-recaptcha></div>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
-
-    </div><!-- .contact -->
+    <div class="intro">
+      <h1>A dope a.f. boilerplate for static portfolio websites!</h1>
+      <p>It uses Nunjucks templating.</p>
+      <p>Gulp handles the templates as well as compiling and optimising Sass, JS, HTML, and images.</p>
+      <p>It also includes browser sync.</p>
+    </div>
 
   </div><!-- row -->
 
@@ -124,6 +105,9 @@
     <script src="js/lib/jquery-2.1.0.min.js"></script>
     <script src="js/daMenu.js"></script>
     <script src="js/userTabbing.js"></script>
+
+    <script src="js/lib/jquery.fancybox.js"></script>
+    <script src="js/daFancybox.js"></script>
     
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
     <script src="js/lib/cookieConsent.js"></script>
