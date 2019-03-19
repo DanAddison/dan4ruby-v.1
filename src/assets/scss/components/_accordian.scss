@@ -1,12 +1,12 @@
 
-.accordian {
+.accordion {
 
-	.accordian-section {
+	.accordion-section {
 		border-bottom: 1px solid $dark-green;
 		background-color: transparent;
 	}
 
-	.accordian-head {
+	.accordion-head {
 		position: relative;
     cursor: pointer;
 
@@ -20,7 +20,7 @@
     }
 	}
 
-	.accordian-head:after {
+	.accordion-head:after {
 		content: '';
 		border-top: 10px solid  $dark-green;
 		border-left: 10px solid transparent;
@@ -32,7 +32,7 @@
 		transition: transform .3s ease;
 	}
 
-	.accordian-body {
+	.accordion-body {
 		display: none;
     padding-bottom: 1em;
     padding-right: $spacing;
@@ -52,16 +52,16 @@
     }
 	}
 
-	.accordian-body ul {
+	.accordion-body ul {
 		margin-top: 13px; 
 		padding: 0 0 0 8px;
 	}
 
-	.accordian-expanded .accordian-head:after {
+	.accordion-expanded .accordion-head:after {
 		transform: rotate(-180deg);
 	}
 
-	.accordian-close {
+	.accordion-close {
 		padding-bottom: 2em;
 		text-transform:	uppercase;
 		text-decoration: none;
@@ -69,7 +69,7 @@
     font-size: .9em;
 	}
 
-	.accordian-close:hover {
+	.accordion-close:hover {
 		text-decoration: underline;
 	}
 }

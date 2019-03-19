@@ -1,5 +1,5 @@
 /*
-*  Module: Expandable Accordian
+*  Module: Expandable accordion
 *
 *  Simple hide/show for content blocks
 *
@@ -7,25 +7,25 @@
 
 jQuery(document).ready( function($) {
 	// This class will be added to the expanded item
-	var activeItemClass = 'accordian-expanded';
-	var accordianItemSelector = '.accordian-section';
-	var accordianBody = '.accordian-body';
-	var toggleSelector = '.accordian-head';
-	var closeSelector = '.accordian-close';
+	var activeItemClass = 'accordion-expanded';
+	var accordionItemSelector = '.accordion-section';
+	var accordionBody = '.accordion-body';
+	var toggleSelector = '.accordion-head';
+	var closeSelector = '.accordion-close';
 
 	$(toggleSelector).on('click', function() {
 		$(this)
-			.closest(accordianItemSelector) // go up to the accordian item element
+			.closest(accordionItemSelector) // go up to the accordion item element
 			.toggleClass(activeItemClass)
 				.siblings()
 				.removeClass(activeItemClass)
-					.find(accordianBody)
+					.find(accordionBody)
 					.stop()
 					.slideUp();
 
 		$(this)
-			.closest(accordianItemSelector)
-				.find(accordianBody)
+			.closest(accordionItemSelector)
+				.find(accordionBody)
 					.stop()
 					.slideToggle();
 	});
@@ -34,9 +34,9 @@ jQuery(document).ready( function($) {
 		event.preventDefault();
 
 		$(this)
-			.closest(accordianItemSelector)
+			.closest(accordionItemSelector)
 			.removeClass(activeItemClass)
-				.find(accordianBody)
+				.find(accordionBody)
 				.slideUp();
 
 	});

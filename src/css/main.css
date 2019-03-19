@@ -1259,21 +1259,21 @@ body:not(.user-is-tabbing) a:focus {
     margin-top: 5px;
     padding: 0 3px; }
 
-.accordian .accordian-section {
+.accordion .accordion-section {
   border-bottom: 1px solid #2C5854;
   background-color: transparent; }
 
-.accordian .accordian-head {
+.accordion .accordion-head {
   position: relative;
   cursor: pointer; }
-  .accordian .accordian-head h3 {
+  .accordion .accordion-head h3 {
     font-size: 1.5em;
     margin: 1em 2em 1em 0; }
     @media screen and (min-width: 700px) {
-      .accordian .accordian-head h3 {
+      .accordion .accordion-head h3 {
         font-size: 1.75em; } }
 
-.accordian .accordian-head:after {
+.accordion .accordion-head:after {
   content: '';
   border-top: 10px solid #2C5854;
   border-left: 10px solid transparent;
@@ -1284,35 +1284,35 @@ body:not(.user-is-tabbing) a:focus {
   transition: translate(0, -50%);
   transition: transform .3s ease; }
 
-.accordian .accordian-body {
+.accordion .accordion-body {
   display: none;
   padding-bottom: 1em;
   padding-right: 2em;
   max-width: 1000px; }
   @media screen and (min-width: 500px) {
-    .accordian .accordian-body {
+    .accordion .accordion-body {
       padding-right: 4em; } }
-  .accordian .accordian-body .answer {
+  .accordion .accordion-body .answer {
     display: flex; }
-    .accordian .accordian-body .answer .meme {
+    .accordion .accordion-body .answer .meme {
       height: 200px;
       padding-right: 2em; }
 
-.accordian .accordian-body ul {
+.accordion .accordion-body ul {
   margin-top: 13px;
   padding: 0 0 0 8px; }
 
-.accordian .accordian-expanded .accordian-head:after {
+.accordion .accordion-expanded .accordion-head:after {
   transform: rotate(-180deg); }
 
-.accordian .accordian-close {
+.accordion .accordion-close {
   padding-bottom: 2em;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.1em;
   font-size: .9em; }
 
-.accordian .accordian-close:hover {
+.accordion .accordion-close:hover {
   text-decoration: underline; }
 
 @font-face {
