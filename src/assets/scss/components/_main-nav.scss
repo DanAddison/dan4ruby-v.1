@@ -1,25 +1,67 @@
 
 .main-nav {
-  display: flex;
-
+  display: flex; 
+  
   ul {
-    display: flex;
-    justify-content: center;
+    display: none;
     list-style: none;
-    margin: 0;
-    padding-left: 0;
+    
+    li {
+      margin: 1em 0;    
+    }
+    
+    a {
+      display: block;
+      text-align: center;
+      padding: 0 1em;
+      font-family: $font__headings;
+      font-weight: lighter;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: $dark-green;
+      
+    }
+
+    @include mq($bp-menu) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+
+      li:last-of-type a {
+        padding-right: 0;
+      }
+    }
   }
 
-  li {
-    // margin-top: 10px;
+  &.is-active-menu ul {
+    display: block;
+    z-index: 10;
+    background-color: $white;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    padding: 2em 0;
   }
+    
 
-  a {
-    padding: 0 1em;
-    font-family: $font__headings;
-    font-weight: lighter;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #000;
+  .menu-button {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+
+    @include mq($bp-s) {
+      font-size: 1.75em;
+    }
+
+    @include mq($bp-menu) {
+      display: none; 
+    }
+
+    .icon-menu {
+      // font-size: 1.25em;
+      cursor: pointer;
+    }
   }
 }

@@ -26,10 +26,10 @@ html {
 }
 body {
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 1.25;
   font-weight: 400;
-  font-family: Helvetica, Arial, sans-serif;
-  color: #222;
+  font-family: $font__body;
+  color: $dark-green;
 }
 
 /* Typography
