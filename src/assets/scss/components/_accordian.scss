@@ -1,0 +1,75 @@
+
+.accordian {
+
+	.accordian-section {
+		border-bottom: 1px solid $dark-green;
+		background-color: transparent;
+	}
+
+	.accordian-head {
+		position: relative;
+    cursor: pointer;
+
+    h3 {
+      font-size: 1.5em;
+      margin: 1em 2em 1em 0;
+
+      @include mq($bp-m) {
+        font-size: 1.75em;
+      }
+    }
+	}
+
+	.accordian-head:after {
+		content: '';
+		border-top: 10px solid  $dark-green;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		position: absolute;
+		right: 15px;
+		top: 40%;
+		transition: translate(0, -50%);
+		transition: transform .3s ease;
+	}
+
+	.accordian-body {
+		display: none;
+    padding-bottom: 1em;
+    padding-right: $spacing;
+    max-width: $bp-l;
+    
+    @include mq($bp-s) {
+      padding-right: $spacing*2;
+    }
+    
+    .answer {
+      display: flex;
+
+      .meme {
+        height: 200px;
+        padding-right: 2em;
+      }
+    }
+	}
+
+	.accordian-body ul {
+		margin-top: 13px; 
+		padding: 0 0 0 8px;
+	}
+
+	.accordian-expanded .accordian-head:after {
+		transform: rotate(-180deg);
+	}
+
+	.accordian-close {
+		padding-bottom: 2em;
+		text-transform:	uppercase;
+		text-decoration: none;
+    letter-spacing: 0.1em;
+    font-size: .9em;
+	}
+
+	.accordian-close:hover {
+		text-decoration: underline;
+	}
+}

@@ -156,3 +156,28 @@
 		}		
 	}
 }
+
+
+.row__colspaced.flex-grid {
+	display: flex;
+	flex-wrap: wrap;
+  flex-direction: row;		
+	
+	&:before,
+	&:after {
+		display: none;
+	}
+	
+	> [class*="span"] {
+		float: none;
+		display: flex;
+		flex-wrap: nowrap;
+	  flex-direction: column;		
+	}	
+}
+
+.full-width-flex {
+	display: flex;
+	flex-wrap: wrap;
+		
+}

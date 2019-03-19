@@ -44,7 +44,7 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1300px; }
+  max-width: 1000px; }
   @media screen and (min-width: 500px) {
     .row .span4-1 {
       width: 25%; }
@@ -341,6 +341,22 @@
     margin-top: 0; }
   .one-col-to-three-at-bp-l [class*="span"]:nth-child(3n + 1) {
     clear: left; } }
+
+.row__colspaced.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+  .row__colspaced.flex-grid:before, .row__colspaced.flex-grid:after {
+    display: none; }
+  .row__colspaced.flex-grid > [class*="span"] {
+    float: none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column; }
+
+.full-width-flex {
+  display: flex;
+  flex-wrap: wrap; }
 
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -1010,7 +1026,9 @@ hr {
   outline: 0; }
 
 img {
-  display: block; }
+  display: block;
+  width: 100%;
+  height: auto; }
 
 .video-responsive {
   margin-top: 20px;
@@ -1092,7 +1110,7 @@ body:not(.user-is-tabbing) a:focus {
     .site-footer .row {
       display: flex;
       justify-content: space-between;
-      padding: 6em; } }
+      padding: 6em 2em; } }
   .site-footer .social-icons {
     display: flex; }
     .site-footer .social-icons a {
@@ -1121,20 +1139,15 @@ body:not(.user-is-tabbing) a:focus {
         color: #A29D00; }
 
 .section {
-  background-color: #F8F8F5;
   margin-bottom: 4em;
-  padding: 4em; }
-  .section img {
-    max-width: 500px; }
-  .section .copy {
-    padding: 0 2em; }
+  padding: 4em 0;
+  border-top: 1px solid #c4c2c2; }
+  .section .map iframe {
+    width: 100%; }
   .section h2 {
     font-weight: bold;
     font-size: 2em;
     color: #2C5854; }
-  @media screen and (min-width: 700px) {
-    .section {
-      display: flex; } }
 
 .faqs {
   display: block; }
@@ -1148,11 +1161,11 @@ body:not(.user-is-tabbing) a:focus {
   @media screen and (min-width: 700px) {
     .rsvp {
       display: flex; } }
-  .rsvp .memes .meme {
+  .rsvp .meme {
     margin-bottom: 8em; }
-  @media screen and (min-width: 700px) {
-    .rsvp .memes {
-      width: 50%; } }
+    @media screen and (min-width: 700px) {
+      .rsvp .meme {
+        width: 50%; } }
 
 .site-branding {
   text-align: center; }
@@ -1245,6 +1258,62 @@ body:not(.user-is-tabbing) a:focus {
   .thumb p {
     margin-top: 5px;
     padding: 0 3px; }
+
+.accordian .accordian-section {
+  border-bottom: 1px solid #2C5854;
+  background-color: transparent; }
+
+.accordian .accordian-head {
+  position: relative;
+  cursor: pointer; }
+  .accordian .accordian-head h3 {
+    font-size: 1.5em;
+    margin: 1em 2em 1em 0; }
+    @media screen and (min-width: 700px) {
+      .accordian .accordian-head h3 {
+        font-size: 1.75em; } }
+
+.accordian .accordian-head:after {
+  content: '';
+  border-top: 10px solid #2C5854;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  right: 15px;
+  top: 40%;
+  transition: translate(0, -50%);
+  transition: transform .3s ease; }
+
+.accordian .accordian-body {
+  display: none;
+  padding-bottom: 1em;
+  padding-right: 2em;
+  max-width: 1000px; }
+  @media screen and (min-width: 500px) {
+    .accordian .accordian-body {
+      padding-right: 4em; } }
+  .accordian .accordian-body .answer {
+    display: flex; }
+    .accordian .accordian-body .answer .meme {
+      height: 200px;
+      padding-right: 2em; }
+
+.accordian .accordian-body ul {
+  margin-top: 13px;
+  padding: 0 0 0 8px; }
+
+.accordian .accordian-expanded .accordian-head:after {
+  transform: rotate(-180deg); }
+
+.accordian .accordian-close {
+  padding-bottom: 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  font-size: .9em; }
+
+.accordian .accordian-close:hover {
+  text-decoration: underline; }
 
 @font-face {
   font-family: 'icomoon';
