@@ -10,6 +10,12 @@
     font-family: $font__headings;
     font-size: 4rem;
     margin: 0;
+    transition: all .2s ease;
+
+    &:hover,
+    &:focus {
+      color: $light-green;
+    }
   }
 
 

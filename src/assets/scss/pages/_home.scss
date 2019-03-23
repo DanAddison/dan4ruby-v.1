@@ -1,17 +1,36 @@
+#home {
+
+  .hero {
+    height: calc( 100vh - 120px);
+  }
+  
+  .site-header {
+    margin-top: calc( 100vh - 120px);
+  }
+}
+
 .section {
-  // background-color: #fff;
   margin-bottom: $spacing*2;
   padding: $spacing*2 0;
   border-top: 1px solid $color__canvas-medium;
 
-  // .image{
-  // }
-
-  // .copy {
-  // }
-
-  .map iframe {
+  .image,
+  .map {
+    margin: $spacing 0;
     width: 100%;
+    height: 0;
+    padding-bottom: 80%;
+    overflow: hidden;
+  }
+
+  .map {
+    position: relative;
+    
+    iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    }
   }
 
   h2 {
@@ -19,14 +38,12 @@
     font-size: 2em;
     color: $dark-green;
   } 
-}
 
-.faqs {
-  display: block;
-  
-  .question {
-    margin-bottom: 0.25em;
-    font-size: 1.25em;
-    font-weight: bold;
+  @include mq($bp-m) {
+
+    .image,
+    .map {
+      margin: 0;
+    }
   }
 }

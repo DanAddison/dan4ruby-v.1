@@ -1,4 +1,3 @@
-
 .main-nav {
   display: flex; 
   
@@ -19,7 +18,12 @@
       font-size: 1.5rem;
       text-decoration: none;
       color: $dark-green;
-      
+      transition: all .2s ease;
+
+      &:hover,
+      &:focus {
+        color: $light-green;
+      } 
     }
 
     @include mq($bp-menu) {
@@ -33,19 +37,7 @@
       }
     }
   }
-
-  &.is-active-menu ul {
-    display: block;
-    z-index: 10;
-    background-color: $white;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    right: 0;
-    padding: 2em 0;
-  }
     
-
   .menu-button {
     display: flex;
     align-items: center;
@@ -64,4 +56,11 @@
       cursor: pointer;
     }
   }
+}
+
+// active page highlighting
+body#home .nav-home a,
+body#RSVP .nav-rsvp a,
+body#gallery .nav-gallery a {
+  text-decoration: underline;
 }

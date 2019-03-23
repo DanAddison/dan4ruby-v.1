@@ -1,5 +1,6 @@
 
 .accordion {
+	margin-bottom: $spacing*2;
 
 	.accordion-section {
 		border-bottom: 1px solid $dark-green;
@@ -43,11 +44,17 @@
     }
     
     .answer {
-      display: flex;
+			
+			a:hover .meme {
+				filter: invert(100%);
+			}
 
       .meme {
-        height: 200px;
-        padding-right: 2em;
+				display: inline-block;
+				width: 400px;
+				max-width: 100%;
+				margin: $spacing 0;
+				transition: all .2s ease;
       }
     }
 	}

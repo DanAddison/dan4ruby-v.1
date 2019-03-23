@@ -1,13 +1,11 @@
 .contact-form {
-  float: left;
-  text-align: left;
   width: 100%;
-  padding: 1rem;
 
   input,
   select,
   textarea {
     width: 100%;
+    max-width: $bp-s;
     margin: .5rem 0;
   }
 
@@ -15,11 +13,13 @@
 
     &:hover,
     &:focus {
-      background-color: $pink;
+      background-color: $dark-green;
+      color: $white;
     }
   }
 
-  @include mq($bp-m) {
-    width: 50%;
+
+  input[type="radio"] {
+    width: 1.5em;
   }
 }
