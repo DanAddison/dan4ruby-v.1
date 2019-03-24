@@ -28,16 +28,16 @@
     }
     
     a {
+      text-decoration: none;
       color: $dark-green;
       padding: 0.5em 0;
       transition: all .2s ease;
     
       &:hover {
-        text-decoration: none;
-        color: $mustard;
+        color: $color__action;
 
         i {
-          color: $mustard;
+          color: $color__action;
         }
       }
     }
@@ -51,17 +51,9 @@
   }
 
   .copyright {
-    // padding: 0.5em 0;
 
     a {
-      text-decoration: underline;
       border-radius: 2px;
-      color: $dark-green;
-
-      &:hover {
-        text-decoration: none;
-        color: $mustard;
-      }
     }
 
   }

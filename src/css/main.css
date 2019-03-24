@@ -769,10 +769,10 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  text-decoration: none;
-  color: #A29D00; }
+  text-decoration: underline;
+  color: #2C5854; }
   a:hover, a:focus, a:active {
-    text-decoration: underline; }
+    color: #89BBA2; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -1122,26 +1122,21 @@ body:not(.user-is-tabbing) a:focus {
       .site-footer .social-icons {
         margin-bottom: 0; } }
     .site-footer .social-icons a {
+      text-decoration: none;
       color: #2C5854;
       padding: 0.5em 0;
       transition: all .2s ease; }
       .site-footer .social-icons a:hover {
-        text-decoration: none;
-        color: #A29D00; }
+        color: #89BBA2; }
         .site-footer .social-icons a:hover i {
-          color: #A29D00; }
+          color: #89BBA2; }
     .site-footer .social-icons i {
       font-size: 1.25em;
       padding-right: .25em;
       color: #2C5854;
       transition: all .2s ease; }
   .site-footer .copyright a {
-    text-decoration: underline;
-    border-radius: 2px;
-    color: #2C5854; }
-    .site-footer .copyright a:hover {
-      text-decoration: none;
-      color: #A29D00; }
+    border-radius: 2px; }
 
 #home .hero {
   height: calc( 100vh - 120px); }
@@ -1150,22 +1145,14 @@ body:not(.user-is-tabbing) a:focus {
   margin-top: calc( 100vh - 120px); }
 
 .section {
-  margin-bottom: 4em;
-  padding: 4em 0;
-  border-top: 1px solid #c4c2c2; }
-  .section .image,
-  .section .map {
+  margin-bottom: 2em;
+  padding: 2em 0; }
+  .section .image {
     margin: 2em 0;
     width: 100%;
     height: 0;
     padding-bottom: 80%;
     overflow: hidden; }
-  .section .map {
-    position: relative; }
-    .section .map iframe {
-      position: absolute;
-      width: 100%;
-      height: 100%; }
   .section h2 {
     font-weight: bold;
     font-size: 2em;
@@ -1312,14 +1299,26 @@ body#gallery .nav-gallery a {
     @media screen and (min-width: 500px) {
       .accordion .accordion-body {
         padding-right: 4em; } }
-    .accordion .accordion-body .answer a:hover .meme {
+    .accordion .accordion-body a:hover .meme {
       filter: invert(100%); }
-    .accordion .accordion-body .answer .meme {
+    .accordion .accordion-body .meme {
       display: inline-block;
       width: 400px;
       max-width: 100%;
       margin: 2em 0;
       transition: all .2s ease; }
+    .accordion .accordion-body .map {
+      margin: 2em 0;
+      width: 700px;
+      max-width: 100%;
+      height: 0;
+      padding-bottom: 50%;
+      overflow: hidden;
+      position: relative; }
+      .accordion .accordion-body .map iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%; }
   .accordion .accordion-body ul {
     margin-top: 13px;
     padding: 0 0 0 8px; }

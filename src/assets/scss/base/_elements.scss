@@ -65,16 +65,16 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-	text-decoration: none;
-	color: $color__action;
-
+  text-decoration: underline;
+  color: $dark-green;
+  
 	&:visited {
-		// color: $color__link-visited;
+    // color: $color__link-visited;
 	}
 	&:hover,
 	&:focus,
 	&:active {
-		text-decoration: underline;
+    color: $color__action;
 	}
 	&:focus {
 		outline: thin dotted;
