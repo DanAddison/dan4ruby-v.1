@@ -1,18 +1,21 @@
 .hero {
-  z-index: -10;
-  height: 40vh;
-  background-image: url(/assets/images/R-header-1.svg);
+  height: 30vh;
+  background-color: $color__canvas-light;
+  background-image: url(/assets/images/newriver.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
 }
 
 .site-header {
-  margin-top: 40vh;
-  background-color: $white;
+  // z-index: 100;
+  // position: sticky;
+  // top: 0;
+  margin-top: 25vh;
+  background-color: $color__canvas-light;
 
   .row {
     padding-top: 1em;
@@ -24,16 +27,31 @@
   .site-branding {
     display: flex;
     align-items: center;
+
+    a:hover h1 {
+      color: $secondary;
+    }
     
     h1 {
       font-weight: normal;
-      color: $dark-green;
+      color: $color__body-light;
       font-size: 2.5em;
       margin-bottom: 0.25em;
 
       @include mq($bp-s) {
-        font-size: 4em;
+        font-size: 3em;
       }
     }
+  }
+}
+
+@include mq($bp-l) {
+  
+  .hero {
+    height: 50vh;
+  }
+
+  .site-header {
+    margin-top: 45vh;
   }
 }

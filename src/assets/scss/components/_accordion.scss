@@ -3,7 +3,7 @@
 	margin-bottom: $spacing*2;
 
 	.accordion-section {
-		border-bottom: 1px solid $dark-green;
+		border-bottom: 1px solid $color__body-light;
 		background-color: transparent;
 	}
 
@@ -23,7 +23,7 @@
 
 	.accordion-head:after {
 		content: '';
-		border-top: 10px solid  $dark-green;
+		border-top: 10px solid  $color__body-light;
 		border-left: 10px solid transparent;
 		border-right: 10px solid transparent;
 		position: absolute;
@@ -46,6 +46,11 @@
 			
 		a:hover .meme {
 			filter: invert(100%);
+		}
+
+		.image {
+			max-width: 300px;
+			margin-bottom: $spacing;
 		}
 
 		.meme {

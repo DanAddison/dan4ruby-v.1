@@ -4,5 +4,24 @@
 
 .page {
   // min-height: calc(100vh - 180px);
-  background-color: $white;
+  background-color: $secondary;
+  position: relative;
+
+  .bg-skew {
+    position: absolute;
+    background-image: url(/assets/images/skew.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 100vw;
+  }
+
+  .row {
+    max-width: $content-max-width;
+  }
 }

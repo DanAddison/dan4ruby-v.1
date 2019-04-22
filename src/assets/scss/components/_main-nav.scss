@@ -17,12 +17,12 @@
       font-weight: lighter;
       font-size: 1.5rem;
       text-decoration: none;
-      color: $dark-green;
+      color: $color__body-light;
       transition: all .2s ease;
 
       &:hover,
       &:focus {
-        color: $light-green;
+        color: $secondary;
       } 
     }
 
@@ -55,6 +55,20 @@
       // font-size: 1.25em;
       cursor: pointer;
     }
+  }
+}
+
+.main-nav.is-active-menu {
+
+  ul {
+    display: block;
+    z-index: 100;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    background-color: $color__canvas-light;
+    padding-bottom: $spacing;
   }
 }
 
