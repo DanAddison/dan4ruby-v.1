@@ -9,7 +9,7 @@
 
   .bg-skew {
     position: absolute;
-    background-image: url(/assets/images/skew.svg);
+    background-image: url(/assets/images/angled-header.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -17,7 +17,7 @@
     top: -2px;
     left: 0;
     right: 0;
-    height: 300px;
+    height: 23vw; // related to ratio between height and width of the svg
     width: 100vw;
   }
 

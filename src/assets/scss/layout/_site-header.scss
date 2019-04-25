@@ -7,6 +7,7 @@
   background-size: cover;
   position: absolute;
   top: 0;
+  padding-top: $spacing;
   width: 100%;
 }
 
@@ -14,7 +15,7 @@
   // z-index: 100;
   // position: sticky;
   // top: 0;
-  margin-top: 25vh;
+  margin-top: 30vh;
   background-color: $color__canvas-light;
 
   .row {
@@ -34,7 +35,7 @@
     
     h1 {
       font-weight: normal;
-      color: $color__body-light;
+      color: $color__body;
       font-size: 2.5em;
       margin-bottom: 0.25em;
 
@@ -52,6 +53,6 @@
   }
 
   .site-header {
-    margin-top: 45vh;
+    margin-top: 50vh;
   }
 }

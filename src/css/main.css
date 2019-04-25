@@ -716,10 +716,10 @@ html {
 
 body {
   font-size: 1em;
-  line-height: 1.25;
+  line-height: 1.5;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
-  color: #474747; }
+  color: #222; }
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -770,7 +770,7 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   text-decoration: underline;
-  color: #474747; }
+  color: #222; }
   a:hover, a:focus, a:active {
     color: #E6C1BA; }
   a:focus {
@@ -1075,7 +1075,7 @@ body:not(.user-is-tabbing) a:focus {
   position: relative; }
   .page .bg-skew {
     position: absolute;
-    background-image: url(/assets/images/skew.svg);
+    background-image: url(/assets/images/angled-header.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1083,7 +1083,7 @@ body:not(.user-is-tabbing) a:focus {
     top: -2px;
     left: 0;
     right: 0;
-    height: 300px;
+    height: 23vw;
     width: 100vw; }
   .page .row {
     max-width: 700px; }
@@ -1097,10 +1097,11 @@ body:not(.user-is-tabbing) a:focus {
   background-size: cover;
   position: absolute;
   top: 0;
+  padding-top: 2em;
   width: 100%; }
 
 .site-header {
-  margin-top: 25vh;
+  margin-top: 30vh;
   background-color: #FFFCE8; }
   .site-header .row {
     padding-top: 1em;
@@ -1114,7 +1115,7 @@ body:not(.user-is-tabbing) a:focus {
       color: #02BC97; }
     .site-header .site-branding h1 {
       font-weight: normal;
-      color: #474747;
+      color: #222;
       font-size: 2.5em;
       margin-bottom: 0.25em; }
       @media screen and (min-width: 500px) {
@@ -1125,7 +1126,7 @@ body:not(.user-is-tabbing) a:focus {
   .hero {
     height: 50vh; }
   .site-header {
-    margin-top: 45vh; } }
+    margin-top: 50vh; } }
 
 .site-footer {
   text-align: center;
@@ -1168,7 +1169,7 @@ body:not(.user-is-tabbing) a:focus {
 
 @media screen and (min-width: 1000px) {
   #home .hero {
-    height: calc( 100vh - 70px); }
+    height: calc( 100vh - 110px); }
   #home .site-header {
     margin-top: calc( 100vh - 120px); } }
 
@@ -1178,25 +1179,25 @@ body:not(.user-is-tabbing) a:focus {
   .section .image {
     margin-bottom: 2em;
     width: 100%; }
-  .section h2 {
-    font-weight: bold;
-    font-size: 2em;
-    color: #474747; }
   .section p {
     font-size: 1.25em; }
 
-.rsvp h1 {
-  font-size: 2em;
-  margin-bottom: 2em; }
-
-.rsvp .rsvp__item {
-  margin-bottom: 4em; }
-  @media screen and (min-width: 700px) {
-    .rsvp .rsvp__item {
-      display: flex; } }
-  .rsvp .rsvp__item .rsvp__item-number {
+.rsvp {
+  margin-top: 2em; }
+  .rsvp h1 {
     font-size: 2em;
-    margin-right: 1em; }
+    margin-bottom: 2em; }
+  .rsvp .rsvp__item {
+    margin-bottom: 4em; }
+    .rsvp .rsvp__item .rsvp__item-number {
+      font-size: 1.75em;
+      margin-right: 1em; }
+  @media screen and (min-width: 700px) {
+    .rsvp h1 {
+      font-size: 2.5em; } }
+  @media screen and (min-width: 1000px) {
+    .rsvp {
+      margin-top: 4em; } }
 
 .site-branding {
   text-align: center; }
@@ -1225,7 +1226,7 @@ body:not(.user-is-tabbing) a:focus {
       font-weight: lighter;
       font-size: 1.5rem;
       text-decoration: none;
-      color: #474747;
+      color: #222;
       transition: all .2s ease; }
       .main-nav ul a:hover, .main-nav ul a:focus {
         color: #02BC97; }
@@ -1300,74 +1301,86 @@ body#gallery .nav-gallery a {
     margin-top: 5px;
     padding: 0 3px; }
 
-.accordion {
-  margin-bottom: 4em; }
-  .accordion .accordion-section {
-    border-bottom: 1px solid #474747;
-    background-color: transparent; }
-  .accordion .accordion-head {
-    position: relative;
-    cursor: pointer; }
-    .accordion .accordion-head h3 {
-      font-size: 1.5em;
-      margin: 1em 2em 1em 0; }
-      @media screen and (min-width: 700px) {
-        .accordion .accordion-head h3 {
-          font-size: 1.75em; } }
-  .accordion .accordion-head:after {
-    content: '';
-    border-top: 10px solid #474747;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    position: absolute;
-    right: 15px;
-    top: 40%;
-    transition: translate(0, -50%);
-    transition: transform .3s ease; }
-  .accordion .accordion-body {
-    display: none;
-    padding-bottom: 1em;
-    padding-right: 2em;
-    max-width: 1000px; }
-    @media screen and (min-width: 500px) {
-      .accordion .accordion-body {
-        padding-right: 4em; } }
-    .accordion .accordion-body a:hover .meme {
-      filter: invert(100%); }
-    .accordion .accordion-body .image {
-      max-width: 300px;
-      margin-bottom: 2em; }
-    .accordion .accordion-body .meme {
-      display: inline-block;
-      width: 400px;
-      max-width: 100%;
-      margin: 2em 0;
-      transition: all .2s ease; }
-    .accordion .accordion-body .map {
-      margin: 2em 0;
-      width: 700px;
-      max-width: 100%;
-      height: 0;
-      padding-bottom: 50%;
-      overflow: hidden;
-      position: relative; }
-      .accordion .accordion-body .map iframe {
-        position: absolute;
-        width: 100%;
-        height: 100%; }
-  .accordion .accordion-body ul {
-    margin-top: 13px;
-    padding: 0 0 0 8px; }
-  .accordion .accordion-expanded .accordion-head:after {
-    transform: rotate(-180deg); }
-  .accordion .accordion-close {
-    padding-bottom: 2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.1em;
-    font-size: .9em; }
-  .accordion .accordion-close:hover {
-    text-decoration: underline; }
+.accordion .accordion-section {
+  border-bottom: 1px solid #474747;
+  background-color: transparent; }
+
+.accordion .accordion-head {
+  position: relative;
+  cursor: pointer; }
+  .accordion .accordion-head h3 {
+    font-size: 1.5em;
+    margin: .5em 2em .5em 0; }
+    @media screen and (min-width: 700px) {
+      .accordion .accordion-head h3 {
+        font-size: 1.75em; } }
+
+.accordion .accordion-head:after {
+  content: '';
+  border-top: 10px solid #474747;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  right: 15px;
+  top: 40%;
+  transition: translate(0, -50%);
+  transition: transform .3s ease; }
+
+.accordion .accordion-body {
+  display: none;
+  padding-bottom: 1em;
+  padding: 1em 2em 3em 1em;
+  max-width: 1000px; }
+  @media screen and (min-width: 500px) {
+    .accordion .accordion-body {
+      padding-right: 3em; } }
+  .accordion .accordion-body a:hover .meme {
+    filter: invert(100%); }
+  .accordion .accordion-body .image {
+    max-width: 300px;
+    margin-bottom: 2em; }
+  .accordion .accordion-body .meme {
+    display: inline-block;
+    width: 400px;
+    max-width: 100%;
+    margin: 2em 0;
+    transition: all .2s ease; }
+  .accordion .accordion-body .meme--small {
+    margin: 0 0 1em;
+    width: 300px;
+    max-width: 100%; }
+  .accordion .accordion-body .map {
+    margin: 2em 0;
+    width: 700px;
+    max-width: 100%;
+    height: 0;
+    padding-bottom: 70%;
+    overflow: hidden;
+    position: relative; }
+    .accordion .accordion-body .map iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+
+.accordion .accordion-body ul {
+  margin-top: 13px;
+  padding: 0 0 0 8px; }
+
+.accordion .accordion-expanded .accordion-head h3 {
+  text-decoration: underline; }
+
+.accordion .accordion-expanded .accordion-head:after {
+  transform: rotate(-180deg); }
+
+.accordion .accordion-close {
+  padding-bottom: 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  font-size: .9em; }
+
+.accordion .accordion-close:hover {
+  text-decoration: underline; }
 
 @font-face {
   font-family: 'icomoon';

@@ -4,7 +4,7 @@
     
     
     .hero {
-      height: calc( 100vh - 70px);
+      height: calc( 100vh - 110px);
     }
     
     .site-header {
@@ -22,12 +22,6 @@
     width: 100%;
     // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
   }
-
-  h2 {
-    font-weight: bold;
-    font-size: 2em;
-    color: $color__body-light;
-  } 
 
   p {
     font-size: 1.25em;
