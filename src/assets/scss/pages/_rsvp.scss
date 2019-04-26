@@ -14,10 +14,22 @@
       font-size: 1.75em;
       margin-right: $spacing/2;
     }
+
+    .meme {
+      width: 250px;
+      max-width: 100%;
+      margin-bottom: $spacing;
+    }
   }
 
   a.typeform-share.button {
+    border-radius: 4px !important;
+    font-family: $font__body !important;
 
+    &:hover,
+    &:focus {
+      color: $pink !important;
+    }
   }
 
   @include mq($bp-m) {

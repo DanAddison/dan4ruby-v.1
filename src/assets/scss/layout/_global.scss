@@ -2,6 +2,10 @@
 //   position: relative;
 // }
 
+html {
+  background-color: $color__canvas-light;
+}
+
 .page {
   // min-height: calc(100vh - 180px);
   background-color: $secondary;

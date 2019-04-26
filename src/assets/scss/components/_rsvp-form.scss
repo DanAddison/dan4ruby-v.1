@@ -7,14 +7,22 @@
     width: 100%;
     max-width: $bp-s;
     margin: .5rem 0;
+    background-color: $color__canvas-light;
+  }
+
+  textarea {
+    height: 200px;
   }
 
   button {
+    background-color: $dark-green;
+    color: $white;
+    border: 0;
+    font-size: 1em;
 
     &:hover,
     &:focus {
-      background-color: $dark-green;
-      color: $white;
+      color: $pink;
     }
   }
 

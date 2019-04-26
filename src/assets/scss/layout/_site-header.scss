@@ -7,20 +7,16 @@
   background-size: cover;
   position: absolute;
   top: 0;
-  padding-top: $spacing;
   width: 100%;
 }
 
 .site-header {
-  // z-index: 100;
-  // position: sticky;
-  // top: 0;
   margin-top: 30vh;
   background-color: $color__canvas-light;
 
   .row {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0;
+    padding-bottom: .5em;
     display: flex;
     justify-content: space-between;   
   }
@@ -45,6 +41,20 @@
     }
   }
 }
+
+// @include mq($bp-l) {
+
+//   .site-header {
+//     z-index: 100;
+//     position: sticky;
+//     top: 0;
+
+//     .row {
+//       padding-top: 1em;
+//       padding-bottom: 1em;
+//     }
+//   }
+// }
 
 @include mq($bp-l) {
   
