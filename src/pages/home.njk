@@ -6,21 +6,19 @@
 
   <div class="row row--pad">
 
+    <div class="section intro">
 
+      <div class="image">
+        <img src="assets/images/kew-two-filter.jpg" alt="">
+      </div>
 
-      <div class="section intro">
+      <div class="copy">
+        <h2>Hiyaaaa!!</h2>
+        <p>You’re in the right place for info about our big day, for sending your RSVP, and for seeing all our wedding photos after the event.</p>
+        <p>We can't wait to celebrate with you - expect something fittingly fun and colourful on the day!</p>
+      </div>
 
-          <div class="image">
-            <img src="assets/images/kew-two-filter.jpg" alt="">
-          </div>
-
-          <div class="copy">
-            <h2>Hiyaaaa!!</h2>
-            <p>You’re in the right place for info about our big day, for sending your RSVP, and for seeing all our wedding photos after the event.</p>
-            <p>We can't wait to celebrate with you - expect something fittingly fun and colourful on the day!</p>
-          </div>
-
-      </div><!-- section intro -->
+    </div><!-- section intro -->
 
 
     <div class="accordion">
@@ -45,9 +43,9 @@
         <div class="accordion-body">
           <p>There is no parking at the factory - in fact all of the surrounding streets are usually chock-a-block.</p>
           <p>Almost all of us are local so can easily plan alternative transport - for any out-of-towners, Folkestone West station is 5 minutes walk away.</p>
-          <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2506.2386281177105!2d1.1476031519935608!3d51.08560347946775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47debf342349ee8d%3A0x4e5bdf893d464c10!2sStrange+Cargo+Arts+Company+Ltd!5e0!3m2!1sen!2suk!4v1552476460107" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
+
+          <div id="map"></div>
+
         </div><!-- /.accordion-body -->
       </div><!-- /.accordion-section -->
 
@@ -170,5 +168,9 @@
 {% endblock %}
 
 {% block js %}
-<!-- extra scripts for this page only, begin with 'build js' and give filename.min.js for it -->
+<!--build:js js/map.min.js -->
+<script src="js/daMap.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArXrYXpZTcATfYYasmYdZpu2uCLNioFME&callback=initMap"
+async defer></script>
+<!-- endbuild -->
 {% endblock %}

@@ -1377,6 +1377,12 @@ body#gallery .nav-gallery a {
       position: absolute;
       width: 100%;
       height: 100%; }
+  .accordion .accordion-body #map {
+    width: 700px;
+    max-width: 100%;
+    height: 0;
+    padding-bottom: 70%;
+    overflow: hidden; }
 
 .accordion .accordion-body ul {
   margin: 1em 0;
