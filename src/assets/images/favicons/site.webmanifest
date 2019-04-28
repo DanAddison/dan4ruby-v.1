@@ -1,14 +1,14 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Dan & Ruby",
+    "short_name": "Dan & Ruby",
     "icons": [
         {
-            "src": "/assets/images/favicons/android-chrome-192x192.png?v=vMd22yv4J2",
+            "src": "/android-chrome-192x192.png?v=xQd04W8lQ2",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/assets/images/favicons/android-chrome-512x512.png?v=vMd22yv4J2",
+            "src": "/android-chrome-512x512.png?v=xQd04W8lQ2",
             "sizes": "512x512",
             "type": "image/png"
         }
