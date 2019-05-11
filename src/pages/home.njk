@@ -40,69 +40,11 @@
         <div class="accordion-head">
           <h3>How shall I get there?</h3>
         </div><!-- /.accordion-head -->							
-        <div class="accordion-body">
-          <p>There is no parking at the factory - in fact all of the surrounding streets are usually chock-a-block.</p>
+        <div class="accordion-body accordion-body--map">
+          <p>There is no parking at the factory, and the surrounding streets are usually chock-a-block.</p>
           <p>Almost all of us are local so can easily plan alternative transport - for any out-of-towners, Folkestone West station is 5 minutes walk away.</p>
 
-          <div id="map"></div>
-
-          {# <script src="js/daMap.js"></script> #}
-
-          <script>
-
-            var map;
-            var options = {
-              center: {lat: 51.085597, lng: 1.149856},
-              zoom: 16
-            }
-
-            function initMap() {
-              map = new google.maps.Map(document.getElementById('map'), options);
-
-              var markers = [
-                {
-                  coordinates: {lat: 51.085597, lng: 1.149856},
-                  // iconImage: 'assets/images/sc-icon.png',
-                  content: '<h1>Partaaay!</h1><img src="assets/images/sc-icon.png" alt="">'
-                },
-                {
-                  coordinates: {lat: 51.084725, lng: 1.153940},
-                  content: '<h1>Choo choo!</h1>' 
-                }
-              ];
-
-              // loop through markers
-              for( var i = 0; i < markers.length;i++){
-                addMarker(markers[i])
-              };
-
-              function addMarker(props){  
-                var marker = new google.maps.Marker({
-                  map: map,
-                  position: props.coordinates
-                });
-
-                if(props.iconImage){
-                  marker.setIcon(props.iconImage);
-                }
-
-                if(props.content){
-                  var infoWindow = new google.maps.InfoWindow({
-                    content: props.content,
-                    maxWidth: 200
-                  });
-                };
-                
-                marker.addListener('click', function(){
-                  infoWindow.open(map, marker)
-                });
-              }
-            }
-
-          </script>  
-
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArXrYXpZTcATfYYasmYdZpu2uCLNioFME&callback=initMap"
-          async defer></script>
+          {% include "partials/map.njk" %}
 
         </div><!-- /.accordion-body -->
       </div><!-- /.accordion-section -->
@@ -115,11 +57,12 @@
           <div class="meme meme--small">
             <img src="assets/images/soon.jpg" alt="">
           </div>
+          <p>Details to be confirmed nearer the time, but we think it'll go a little something like this:</p>
           <ul>
-            <li>Arrive around 12-12:30pm</li>
+            <li>Arrive between 12-12:30pm</li>
             <li>The ceremony will take place at 1pm</li>
             <li>There will be food from about 3pm</li>
-            <li>Partying (including Jazz Beams DJs) will go on until 11pm</li>
+            <li>Partying will go on until 11pm</li>
           </ul>
         </div><!-- /.accordion-body -->
       </div><!-- /.accordion-section -->
@@ -156,7 +99,7 @@
         </div><!-- /.accordion-head -->							
         <div class="accordion-body">
           <p>A bottle!</p>
-          <p>We suspect your appetites will be far deeper than our pockets, so any beverage contribution, however small, would help.</p>
+          <p>We suspect your appetites will be deeper than our pockets, so any beverage contribution, however small, would help.</p>
           <p> White Lightning, J20....</p>
           <div class="meme meme--small">
             <img src="assets/images/brando.gif" alt="">
@@ -174,7 +117,7 @@
           <div class="meme meme--small">
             <img src="assets/images/nothanks.jpeg" alt="">
           </div>
-          <p>We do however encourage donations to Strange Cargo. You'll be able to give a little cash on the day, to thank them for their hospitality and help them to keep up the good community work.</p>
+          <p>We do however encourage donations to Strange Cargo. We'll set up a collections box on the day, to thank them for their hospitality and help them to keep up the good community work.</p>
         </div><!-- /.accordion-body -->
       </div><!-- /.accordion-section -->
 
@@ -196,7 +139,8 @@
           <h3>Instagram?</h3>
         </div><!-- /.accordion-head -->							
         <div class="accordion-body">
-          <p>Fine by us. Shall we be extra gross and have a hashtag? Yeeaahh - <a href="https://www.instagram.com/explore/tags/dan4ruby/" target="_blank">#dan4ruby</a></p>
+          <p>Yeah we're fine with being Insta-papped, and it might be an idea to use a hashtag: <a href="https://www.instagram.com/explore/tags/dan4ruby/" target="_blank">#dan4ruby</a>. Easy access to all your wedding-day content!</p>
+          <p>Aspirational.</p>
           <div class="meme meme--small">
               <img src="assets/images/insta.jpg" alt="">
             </div>

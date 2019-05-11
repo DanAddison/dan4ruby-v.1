@@ -11,7 +11,7 @@
   }
 
   textarea {
-    height: 200px;
+    height: 160px;
   }
 
   button {
@@ -22,8 +22,12 @@
 
     &:hover,
     &:focus {
-      color: $pink;
+      background-color: $pink;
     }
+  }
+
+  button[type="submit"] {
+    font-size: .8em;
   }
 
 

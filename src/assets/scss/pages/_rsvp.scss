@@ -3,17 +3,17 @@
   margin-top: $spacing;
   
   h1 {
-    font-size: 2em;
+    font-size: 1.75em;
     margin-bottom: $spacing;
+  }
+
+  .rsvp__item-number {
+    font-size: 1.5em;
+    margin-right: $spacing/2;
   }
 
   .rsvp__item {
     margin-bottom: $spacing*2;
-
-    .rsvp__item-number {
-      font-size: 1.75em;
-      margin-right: $spacing/2;
-    }
 
     .meme {
       width: 250px;
@@ -28,18 +28,18 @@
 
     &:hover,
     &:focus {
-      color: $pink !important;
+      background-color: $pink !important;
     }
   }
 
   @include mq($bp-m) {
     
     h1 {
-      font-size: 2.5em;
+      font-size: 2em;
     }
   }
 
-  @include mq($bp-l) {
+  @include mq($bp-xl) {
     margin-top: $spacing*2;
   }
 }

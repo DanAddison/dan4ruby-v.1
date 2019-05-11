@@ -1,8 +1,7 @@
 #home {
 
-  @include mq($bp-l) {
-    
-    
+  @include mq($bp-m) {
+      
     .hero {
       height: calc( 100vh - 100px);
     }
@@ -25,5 +24,12 @@
 
   p {
     font-size: 1.25em;
+  }
+}
+
+.accordion-body {
+
+  @include mq($bp-m) {
+    font-size: 1.1em;
   }
 }

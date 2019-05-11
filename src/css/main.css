@@ -772,7 +772,7 @@ a {
   text-decoration: underline;
   color: #222; }
   a:hover, a:focus, a:active {
-    color: #ffc3b7; }
+    color: #1021AA; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -1070,7 +1070,7 @@ html {
   background-color: #FFFCE8; }
 
 .page {
-  background-color: #02BC97;
+  background-color: #0dcba5;
   position: relative; }
   .page .bg-skew {
     position: absolute;
@@ -1088,7 +1088,7 @@ html {
     max-width: 700px; }
 
 .hero {
-  height: 30vh;
+  height: 40vh;
   background-color: #FFFCE8;
   background-image: url(/assets/images/newriver.svg);
   background-repeat: no-repeat;
@@ -1099,7 +1099,7 @@ html {
   width: 100%; }
 
 .site-header {
-  margin-top: 30vh;
+  margin-top: 40vh;
   background-color: #FFFCE8; }
   .site-header .row {
     padding-top: 0;
@@ -1110,7 +1110,7 @@ html {
     display: flex;
     align-items: center; }
     .site-header .site-branding a:hover h1 {
-      color: #02BC97; }
+      color: #0dcba5; }
     .site-header .site-branding h1 {
       font-weight: normal;
       color: #222;
@@ -1128,7 +1128,7 @@ html {
 
 .site-footer {
   text-align: center;
-  background-color: #02BC97; }
+  background-color: #0dcba5; }
   .site-footer .row {
     padding: 4em 2em; }
   .site-footer p {
@@ -1151,9 +1151,9 @@ html {
     .site-footer .social-icons a {
       padding: 0.5em 0; }
       .site-footer .social-icons a:hover, .site-footer .social-icons a:focus {
-        color: #ffc3b7; }
+        color: #1021AA; }
         .site-footer .social-icons a:hover i, .site-footer .social-icons a:focus i {
-          color: #ffc3b7; }
+          color: #1021AA; }
     .site-footer .social-icons i {
       font-size: 1.25em;
       padding-right: .25em;
@@ -1163,9 +1163,9 @@ html {
     border-radius: 2px;
     text-decoration: underline; }
     .site-footer .copyright a:hover, .site-footer .copyright a:focus {
-      color: #ffc3b7; }
+      color: #1021AA; }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) {
   #home .hero {
     height: calc( 100vh - 100px); }
   #home .site-header {
@@ -1180,16 +1180,20 @@ html {
   .section p {
     font-size: 1.25em; }
 
+@media screen and (min-width: 700px) {
+  .accordion-body {
+    font-size: 1.1em; } }
+
 .rsvp {
   margin-top: 2em; }
   .rsvp h1 {
-    font-size: 2em;
+    font-size: 1.75em;
     margin-bottom: 2em; }
+  .rsvp .rsvp__item-number {
+    font-size: 1.5em;
+    margin-right: 1em; }
   .rsvp .rsvp__item {
     margin-bottom: 4em; }
-    .rsvp .rsvp__item .rsvp__item-number {
-      font-size: 1.75em;
-      margin-right: 1em; }
     .rsvp .rsvp__item .meme {
       width: 250px;
       max-width: 100%;
@@ -1198,11 +1202,11 @@ html {
     border-radius: 4px !important;
     font-family: "Open Sans", sans-serif !important; }
     .rsvp a.typeform-share.button:hover, .rsvp a.typeform-share.button:focus {
-      color: #ffc3b7 !important; }
+      background-color: #ff8282 !important; }
   @media screen and (min-width: 700px) {
     .rsvp h1 {
-      font-size: 2.5em; } }
-  @media screen and (min-width: 1000px) {
+      font-size: 2em; } }
+  @media screen and (min-width: 1300px) {
     .rsvp {
       margin-top: 4em; } }
 
@@ -1216,7 +1220,7 @@ html {
     margin: 0;
     transition: all .2s ease; }
     .site-branding h1:hover, .site-branding h1:focus {
-      color: #ffc3b7; }
+      color: #ff8282; }
 
 .main-nav {
   display: flex; }
@@ -1236,7 +1240,7 @@ html {
       color: #222;
       transition: all .2s ease; }
       .main-nav ul a:hover, .main-nav ul a:focus {
-        color: #02BC97; }
+        color: #1021AA; }
     @media screen and (min-width: 700px) {
       .main-nav ul {
         display: flex;
@@ -1285,37 +1289,21 @@ body#gallery .nav-gallery a {
     margin: .5rem 0;
     background-color: #FFFCE8; }
   .contact-form textarea {
-    height: 200px; }
+    height: 160px; }
   .contact-form button {
     background-color: #2C5854;
     color: #F8F8F5;
     border: 0;
     font-size: 1em; }
     .contact-form button:hover, .contact-form button:focus {
-      color: #ffc3b7; }
+      background-color: #ff8282; }
+  .contact-form button[type="submit"] {
+    font-size: .8em; }
   .contact-form input[type="radio"] {
     width: 1.5em; }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 4.5rem; }
-
-.thumb {
-  margin: .5rem;
-  width: calc(50% - 1rem); }
-  @media screen and (min-width: 1000px) {
-    .thumb {
-      width: calc(33.3333% - 1rem); } }
-  .thumb .responsive-image {
-    max-width: 100%; }
-  .thumb h3 {
-    margin-top: 10px;
-    margin-bottom: 0;
-    padding: 0 3px; }
-  .thumb p {
-    margin-top: 5px;
-    padding: 0 3px; }
+h2 {
+  font-size: 1.75em; }
 
 .accordion .accordion-section {
   border-bottom: 1px solid #474747;
@@ -1345,11 +1333,11 @@ body#gallery .nav-gallery a {
 .accordion .accordion-body {
   display: none;
   padding-bottom: 1em;
-  padding: 1em 2em 2em 1em;
+  padding: 1em 0.5em 2em 0;
   max-width: 1000px; }
   @media screen and (min-width: 500px) {
     .accordion .accordion-body {
-      padding-right: 3em; } }
+      padding: 1em 3em 2em 1em; } }
   .accordion .accordion-body a:hover .meme {
     filter: invert(100%); }
   .accordion .accordion-body .image {
@@ -1365,24 +1353,23 @@ body#gallery .nav-gallery a {
     margin: 0 0 1em;
     width: 300px;
     max-width: 100%; }
-  .accordion .accordion-body .map {
-    margin: 2em 0;
-    width: 700px;
-    max-width: 100%;
-    height: 0;
-    padding-bottom: 70%;
-    overflow: hidden;
-    position: relative; }
-    .accordion .accordion-body .map iframe {
-      position: absolute;
-      width: 100%;
-      height: 100%; }
-  .accordion .accordion-body #map {
-    width: 700px;
-    max-width: 100%;
-    height: 0;
-    padding-bottom: 70%;
-    overflow: hidden; }
+
+.accordion .accordion-body--map #map {
+  width: 700px;
+  max-width: calc(100% + 40px);
+  height: 0;
+  padding-bottom: 100%;
+  overflow: hidden;
+  margin-left: -15px;
+  margin-right: -25px; }
+  .accordion .accordion-body--map #map h2 {
+    margin-bottom: .5em; }
+  @media screen and (min-width: 500px) {
+    .accordion .accordion-body--map #map {
+      padding-bottom: 80%;
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0; } }
 
 .accordion .accordion-body ul {
   margin: 1em 0;

@@ -35,14 +35,13 @@
 	.accordion-body {
 		display: none;
     padding-bottom: 1em;
-		padding: 1em $spacing $spacing 1em;
+		padding: 1em .5em $spacing 0;
 		max-width: $bp-l;
 		// background-color: #4cd0b6;
     
     @include mq($bp-s) {
-      padding-right: 3em;
-    }
-
+      padding: 1em 3em $spacing 1em;
+		}
 			
 		a:hover .meme {
 			filter: invert(100%);
@@ -67,30 +66,29 @@
 			width: 300px;
 			max-width: 100%;
 		}
+	}
 		
-		.map {
-			margin: $spacing 0;
-			width: $bp-m;
-			max-width: 100%;
-			height: 0;
-			padding-bottom: 70%;
-			overflow: hidden;
-			position: relative;
-			
-			iframe {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			}
-		}
-
-		// new map using api
+	.accordion-body--map {
+		
 		#map {
 			width: $bp-m;
-			max-width: 100%;
+			max-width: calc(100% + 40px);
 			height: 0;
-			padding-bottom: 70%;
+			padding-bottom: 100%;
 			overflow: hidden;
+			margin-left: -15px;
+			margin-right: -25px;
+
+			h2 {
+				margin-bottom: .5em;
+			}
+
+			@include mq($bp-s) {
+				padding-bottom: 80%;
+				max-width: 100%;
+				margin-left: 0;
+				margin-right: 0;
+			}
 		}
 	}
 
