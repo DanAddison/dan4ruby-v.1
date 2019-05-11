@@ -1188,16 +1188,16 @@ html {
   margin-top: 2em; }
   .rsvp h1 {
     font-size: 1.75em;
+    margin-bottom: 1em; }
+  .rsvp .meme {
+    width: 250px;
+    max-width: 100%;
     margin-bottom: 2em; }
   .rsvp .rsvp__item-number {
     font-size: 1.5em;
     margin-right: 1em; }
   .rsvp .rsvp__item {
     margin-bottom: 4em; }
-    .rsvp .rsvp__item .meme {
-      width: 250px;
-      max-width: 100%;
-      margin-bottom: 2em; }
   .rsvp a.typeform-share.button {
     border-radius: 4px !important;
     font-family: "Open Sans", sans-serif !important; }

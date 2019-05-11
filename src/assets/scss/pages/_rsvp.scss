@@ -4,6 +4,12 @@
   
   h1 {
     font-size: 1.75em;
+    margin-bottom: 1em;
+  }
+
+  .meme {
+    width: 250px;
+    max-width: 100%;
     margin-bottom: $spacing;
   }
 
@@ -14,12 +20,6 @@
 
   .rsvp__item {
     margin-bottom: $spacing*2;
-
-    .meme {
-      width: 250px;
-      max-width: 100%;
-      margin-bottom: $spacing;
-    }
   }
 
   a.typeform-share.button {
