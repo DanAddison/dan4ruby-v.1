@@ -1070,6 +1070,7 @@ html {
   background-color: #FFFCE8; }
 
 .page {
+  min-height: 30vh;
   background-color: #0dcba5;
   position: relative; }
   .page .bg-skew {
