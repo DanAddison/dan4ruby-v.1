@@ -36,15 +36,32 @@
     
     a {
       padding: 0.5em 0;
-      
-      &:hover,
-      &:focus {
-        color: $primary;
 
-        i {
-          color: $primary;
+      span {
+
+        position: relative;
+        z-index: 1;
+        
+        &::before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          bottom: 0;
+          left: -0.25em;
+          right: -0.25em;
+          background-color: $pink;
+          transform-origin: center right;
+          transform: scaleX(0);
+          transition: transform 0.2s ease-in-out;
         }
-      }
+        
+          &:hover::before {
+            transform: scaleX(1);
+            transform-origin: center left;
+          }
+        }
+  
     }
     
     i {
@@ -60,10 +77,26 @@
     a {
       border-radius: 2px;
       text-decoration: underline;
-
-      &:hover,
-      &:focus {
-        color: $primary;
+      position: relative;
+      z-index: 1;
+      
+      &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: -0.25em;
+        right: -0.25em;
+        background-color: $pink;
+        transform-origin: center right;
+        transform: scaleX(0);
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      &:hover::before {
+        transform: scaleX(1);
+        transform-origin: center left;
       }
     }
 

@@ -7,22 +7,44 @@
     
     li {
       margin: 1em 0;    
+      padding: 0 1.25em;
+      text-align: center;
     }
     
     a {
-      display: block;
+      display: inline-block;
       text-align: center;
-      padding: 0 1em;
       font-family: $font__headings;
       font-weight: lighter;
       font-size: 1.5rem;
       text-decoration: none;
       color: $color__body;
       transition: all .2s ease;
+      position: relative;
+      z-index: 1;
+      
+      &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: -0.25em;
+        right: -0.25em;
+        background-color: $pink;
+        transform-origin: center right;
+        transform: scaleX(0);
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      &:hover::before {
+        transform: scaleX(1);
+        transform-origin: center left;
+      }
 
       &:hover,
       &:focus {
-        color: $primary;
+        // color: $primary;
       } 
     }
 
@@ -36,6 +58,10 @@
         padding-right: 0;
       }
     }
+  }
+
+  @include mq($bp-menu) {
+    margin-right: -1em;
   }
     
   .menu-button {
@@ -79,4 +105,5 @@ body#home .nav-home a,
 body#RSVP .nav-rsvp a,
 body#gallery .nav-gallery a {
   text-decoration: underline;
+  // color: $primary;
 }

@@ -770,9 +770,24 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   text-decoration: underline;
-  color: #222; }
-  a:hover, a:focus, a:active {
-    color: #1021AA; }
+  color: #222;
+  position: relative;
+  z-index: 1; }
+  a::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -0.25em;
+    right: -0.25em;
+    background-color: #ff8282;
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out; }
+  a:hover::before {
+    transform: scaleX(1);
+    transform-origin: center left; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -1110,8 +1125,26 @@ html {
   .site-header .site-branding {
     display: flex;
     align-items: center; }
-    .site-header .site-branding a:hover h1 {
-      color: #0dcba5; }
+    .site-header .site-branding a {
+      position: relative;
+      z-index: 1; }
+      .site-header .site-branding a::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: -0.25em;
+        right: -0.25em;
+        background-color: #ff8282;
+        transform-origin: center right;
+        transform: scaleX(0);
+        transition: transform 0.2s ease-in-out; }
+      .site-header .site-branding a:hover {
+        color: #222; }
+      .site-header .site-branding a:hover::before {
+        transform: scaleX(1);
+        transform-origin: center left; }
     .site-header .site-branding h1 {
       font-weight: normal;
       color: #222;
@@ -1151,10 +1184,24 @@ html {
         margin-bottom: 0; } }
     .site-footer .social-icons a {
       padding: 0.5em 0; }
-      .site-footer .social-icons a:hover, .site-footer .social-icons a:focus {
-        color: #1021AA; }
-        .site-footer .social-icons a:hover i, .site-footer .social-icons a:focus i {
-          color: #1021AA; }
+      .site-footer .social-icons a span {
+        position: relative;
+        z-index: 1; }
+        .site-footer .social-icons a span::before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          bottom: 0;
+          left: -0.25em;
+          right: -0.25em;
+          background-color: #ff8282;
+          transform-origin: center right;
+          transform: scaleX(0);
+          transition: transform 0.2s ease-in-out; }
+        .site-footer .social-icons a span:hover::before {
+          transform: scaleX(1);
+          transform-origin: center left; }
     .site-footer .social-icons i {
       font-size: 1.25em;
       padding-right: .25em;
@@ -1162,9 +1209,24 @@ html {
       transition: all .2s ease; }
   .site-footer .copyright a {
     border-radius: 2px;
-    text-decoration: underline; }
-    .site-footer .copyright a:hover, .site-footer .copyright a:focus {
-      color: #1021AA; }
+    text-decoration: underline;
+    position: relative;
+    z-index: 1; }
+    .site-footer .copyright a::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: -0.25em;
+      right: -0.25em;
+      background-color: #ff8282;
+      transform-origin: center right;
+      transform: scaleX(0);
+      transition: transform 0.2s ease-in-out; }
+    .site-footer .copyright a:hover::before {
+      transform: scaleX(1);
+      transform-origin: center left; }
 
 @media screen and (min-width: 700px) {
   #home .hero {
@@ -1175,9 +1237,6 @@ html {
 .section {
   margin: 2em 0 6em;
   text-align: center; }
-  .section .image {
-    margin-bottom: 2em;
-    width: 100%; }
   .section p {
     font-size: 1.25em; }
 
@@ -1229,19 +1288,35 @@ html {
     display: none;
     list-style: none; }
     .main-nav ul li {
-      margin: 1em 0; }
+      margin: 1em 0;
+      padding: 0 1.25em;
+      text-align: center; }
     .main-nav ul a {
-      display: block;
+      display: inline-block;
       text-align: center;
-      padding: 0 1em;
       font-family: "Neuton", serif;
       font-weight: lighter;
       font-size: 1.5rem;
       text-decoration: none;
       color: #222;
-      transition: all .2s ease; }
-      .main-nav ul a:hover, .main-nav ul a:focus {
-        color: #1021AA; }
+      transition: all .2s ease;
+      position: relative;
+      z-index: 1; }
+      .main-nav ul a::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: -0.25em;
+        right: -0.25em;
+        background-color: #ff8282;
+        transform-origin: center right;
+        transform: scaleX(0);
+        transition: transform 0.2s ease-in-out; }
+      .main-nav ul a:hover::before {
+        transform: scaleX(1);
+        transform-origin: center left; }
     @media screen and (min-width: 700px) {
       .main-nav ul {
         display: flex;
@@ -1250,6 +1325,9 @@ html {
         margin: 0; }
         .main-nav ul li:last-of-type a {
           padding-right: 0; } }
+  @media screen and (min-width: 700px) {
+    .main-nav {
+      margin-right: -1em; } }
   .main-nav .menu-button {
     display: flex;
     align-items: center;
@@ -1340,7 +1418,9 @@ h2 {
   @media screen and (min-width: 500px) {
     .accordion .accordion-body {
       padding: 1em 3em 2em 1em; } }
-  .accordion .accordion-body a:hover .meme {
+  .accordion .accordion-body .meme-link:hover::before {
+    display: none; }
+  .accordion .accordion-body .meme-link:hover .meme {
     filter: invert(100%); }
   .accordion .accordion-body .image {
     max-width: 100%;
@@ -1392,6 +1472,45 @@ h2 {
 
 .accordion .accordion-close:hover {
   text-decoration: underline; }
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  perspective: 1000px;
+  margin-bottom: 4em; }
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d; }
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); }
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  backface-visibility: hidden; }
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb; }
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #ff8282;
+  transform: rotateY(180deg); }
 
 @font-face {
   font-family: 'icomoon';
