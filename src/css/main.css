@@ -1365,10 +1365,10 @@ body#gallery .nav-gallery a {
   .contact-form textarea {
     width: 100%;
     max-width: 500px;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
     background-color: #FFFCE8; }
   .contact-form textarea {
-    height: 160px; }
+    height: 90px; }
   .contact-form button {
     background-color: #2C5854;
     color: #F8F8F5;
@@ -1377,7 +1377,7 @@ body#gallery .nav-gallery a {
     .contact-form button:hover, .contact-form button:focus {
       background-color: #ff8282; }
   .contact-form button[type="submit"] {
-    font-size: .8em;
+    font-size: 0.8em;
     margin-top: 1em; }
   .contact-form input[type="radio"] {
     width: 1.5em; }
