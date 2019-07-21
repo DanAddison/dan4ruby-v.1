@@ -96,12 +96,15 @@
           </p>
           <p>
             <label>Will you be joining us?</label>
+
+            
+
             <label>
-              <input type="radio" name="response" id="attending" value="attending">
+              <input type="radio" name="response" :value="attending" :checked="yes!">
               I will !
             </label>
             <label>
-              <input type="radio" name="response" id="not-attending" value="not attending">
+              <input type="radio" name="response" :value="attending" :checked="no">
               No, I'm holding out for a better proposal
             </label>
           </p>
