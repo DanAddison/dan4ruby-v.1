@@ -16,46 +16,80 @@
 
       <div class="rsvp__item">
 
-        <form class="contact-form" name="contact" method="POST" netlify-honeypot="bot-field" netlify>
+        <form class="contact-form" name="contact" method="POST" netlify-honeypot="bot-field" netlify="netlify">
           <p class="hidden">
-            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            <label>Don’t fill this out if you're human:
+              <input name="bot-field"/></label>
           </p>
           <p>
-            <input type="text" name="name" placeholder="Your Name(s)" required/>  
+            <input type="text" name="name" placeholder="Your Name(s)" required="required"/>
           </p>
           <p>
-            <input type="email" name="email" placeholder="Your Email"required/>
+            <input type="email" name="email" placeholder="Your Email" required="required"/>
           </p>
           <p>
             <label>Will you be joining us?</label>
-            <input type="radio" name="attending" value="yes"> I will !<br>
-            <input type="radio" name="attending" value="no"> No, I'm holding out for a better proposal
+            <label>
+              <input type="radio" name="attending" value="attending">
+              I will !
+            </label>
+            <label>
+              <input type="radio" name="attending" value="not attending">
+              No, I'm holding out for a better proposal
+            </label>
           </p>
           <p>
-            <textarea type="text" name="message" placeholder="If there's anything else you'd like to add, speak now or forever blah blah blah" rows="10" required></textarea>
+            <textarea type="text" name="message" placeholder="If there's anything else you'd like to add, speak now or forever blah blah blah" rows="10" required="required"></textarea>
           </p>
-          <div data-netlify-recaptcha></div>
+          <div data-netlify-recaptcha="data-netlify-recaptcha"></div>
           <p>
             <button type="submit">Send</button>
           </p>
         </form>
 
-      </div><!-- rsvp__item -->
+      </div>
+      <!-- rsvp__item -->
 
-        <h2 class="rsvp__item-number">2. Please tell us some other stuff</h2>
+      <h2 class="rsvp__item-number">2. Please tell us some other stuff</h2>
       <div class="rsvp__item">
 
+        <a class="typeform-share button" href="https://danieladdison.typeform.com/to/R9aYXt" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#2C5854;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:16px;line-height:40px;text-align:center;margin:0;height:40px;padding:0px 26px;border-radius:0px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers="true" data-hide-footer="true" data-submit-close-delay="5" target="_blank">Hit this button!
+        </a>
+        <script>
+          (function () {
+            var qs,
+              js,
+              q,
+              s,
+              d = document,
+              gi = d.getElementById,
+              ce = d.createElement,
+              gt = d.getElementsByTagName,
+              id = "typef_orm_share",
+              b = "https://embed.typeform.com/";
+            if (!gi.call(d, id)) {
+              js = ce.call(d, "script");
+              js.id = id;
+              js.src = b + "embed.js";
+              q = gt.call(d, "script")[0];
+              q
+                .parentNode
+                .insertBefore(js, q)
+            }
+          })()
+        </script>
 
-        <a class="typeform-share button" href="https://danieladdison.typeform.com/to/R9aYXt" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#2C5854;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:16px;line-height:40px;text-align:center;margin:0;height:40px;padding:0px 26px;border-radius:0px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="5" target="_blank">Hit this button! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+      </div>
+      <!-- rsvp__item -->
 
-      </div><!-- rsvp__item -->
+    </div>
+    <!-- .rsvp -->
 
-    </div><!-- .rsvp -->
-
-  </div><!-- row -->
+  </div>
+  <!-- row -->
 
 {% endblock %}
 
 {% block js %}
-<!-- extra scripts for this page only, begin with 'build js' and give filename.min.js for it -->
+  <!-- extra scripts for this page only, begin with 'build js' and give filename.min.js for it -->
 {% endblock %}
