@@ -1,19 +1,17 @@
 #home {
-
   @include mq($bp-m) {
-      
     .hero {
-      height: calc( 100vh - 100px);
+      height: calc(100vh - 100px);
     }
-    
+
     .site-header {
-      margin-top: calc( 100vh - 90px);
+      margin-top: calc(100vh - 90px);
     }
   }
 }
 
 .section {
-  margin: $spacing 0 $spacing*3;
+  margin: $spacing 0 $spacing * 3;
   text-align: center;
 
   p {
@@ -22,7 +20,6 @@
 }
 
 .accordion-body {
-
   @include mq($bp-m) {
     font-size: 1.1em;
   }

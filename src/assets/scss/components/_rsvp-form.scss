@@ -35,3 +35,13 @@
     width: 1.5em;
   }
 }
+
+.rsvp__item--paypal {
+  table {
+    margin-bottom: 1em;
+
+    select {
+      margin-bottom: 0;
+    }
+  }
+}

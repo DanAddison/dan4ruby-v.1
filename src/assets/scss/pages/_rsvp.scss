@@ -1,7 +1,7 @@
 .rsvp {
   @extend %cf;
   margin-top: $spacing;
-  
+
   h1 {
     font-size: 1.75em;
     margin-bottom: 1em;
@@ -16,10 +16,16 @@
   .rsvp__item-number {
     font-size: 1.5em;
     margin-right: $spacing/2;
+    line-height: 1;
+
+    span {
+      font-size: 1.75em;
+      color: $dark-green;
+    }
   }
 
   .rsvp__item {
-    margin-bottom: $spacing*2;
+    margin-bottom: $spacing * 2;
   }
 
   a.typeform-share.button {
@@ -33,15 +39,12 @@
   }
 
   @include mq($bp-m) {
-    
     h1 {
       font-size: 2em;
     }
   }
 
   @include mq($bp-xl) {
-    margin-top: $spacing*2;
+    margin-top: $spacing * 2;
   }
 }
-
-
