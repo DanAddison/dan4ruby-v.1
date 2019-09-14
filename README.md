@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://dan4ruby.com">
-    <img alt="logo of whiskey tumbler with ice cubes" src="src/assets/images/Dan4Ruby.jpg" width="400" />
+    <img alt="screenshot shows feature header section of Dan4Ruby wedding website" src="src/assets/images/Dan4Ruby.jpg" width="400" />
   </a>
 </p>
 <h1 align="center">
