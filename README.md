@@ -1,4 +1,11 @@
-# Dan 4 Ruby
+<p align="center">
+  <a href="https://dan4ruby.com">
+    <img alt="logo of whiskey tumbler with ice cubes" src="src/assets/images/Dan4Ruby.jpg" width="400" />
+  </a>
+</p>
+<h1 align="center">
+  Dan 4 Ruby
+</h1>
 
 This is our wedding site!
 
