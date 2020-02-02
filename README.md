@@ -7,6 +7,10 @@
   Dan 4 Ruby
 </h1>
 
+<h2 align="center">
+  *note that this is version 1 of the site
+</h2>
+
 This is our wedding site!
 
 It is a public website but it has SEO optimizations stripped out - it is targeted specifically at our invited guests.
